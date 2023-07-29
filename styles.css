@@ -1,11 +1,54 @@
+body {
+	margin: 0;
+	padding: 0;
+  }
 #progress-bar {
-	position: fixed;
+    position:fixed;
 	top: 0;
 	left: 0;
 	width: 3px;
 	height: 10px;
-	background-color: #119f64;
+	background-color: #38f02ef5;
 	z-index: 9999;
-	transition: width 0.2s ease;
-	border-radius: 30px;
+    transition: width 0.3s ease;
+	border-radius: 3px;
   }
+  .hero-section {
+	background-color: #4493fa;
+	height: 100vh;
+	padding: 10vh;
+	max-width: 100%;
+  }
+  .hero-section h1,
+  .hero-section p {
+	margin: 0;
+	opacity: 0;
+	transform: translateY(20px);
+	animation: fadeUp 1s forwards;
+	will-change: opacity, transform;
+	text-shadow: 2px 2px 4px rgb(234, 102, 124);
+  }
+  .hero-section h1 {
+	font-size: 8vw;
+  }
+  .hero-section p {
+	font-size: 4vw;
+  }
+  @keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}

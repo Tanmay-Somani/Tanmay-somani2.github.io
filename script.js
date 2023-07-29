@@ -1,4 +1,5 @@
 $(window).scroll(function() {
+    console.log("Scroll event triggered!");
     const scrollTop = $(window).scrollTop();
     const documentHeight = $(document).height();
     const windowHeight = $(window).height();
